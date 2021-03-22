@@ -94,30 +94,6 @@ proteins = round(proteins,6)
 write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/DDE.csv",row.names = TRUE)
 #********************************************************************************************************************
 
-#non = ftrCOOL::EAAComposition(nonpath,outFormat = "txt")
-#moon =ftrCOOL::EAAComposition(moonpath,outFormat = "txt")
-#non =cbind( non, class1)
-#moon = cbind(moon,class2)
-#proteins = rbind(moon,non)
-#proteins = round(proteins,6)
-#write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/EAAComposition.csv",row.names = TRUE)
-
-#***************************************************************************************************************************
-#***************************************************************************************************************************
-#***************************************************************************************************************************
-#***************************************************************************************************************************
-
-#********************************************************************************************************************
-
-#non = ftrCOOL::EGAAComposition(nonpath,outFormat = "txt")
-#moon =ftrCOOL::EGAAComposition(moonpath,outFormat = "txt")
-#non =cbind( non, class1)
-#moon = cbind(moon,class2)
-#proteins = rbind(moon,non)
-#proteins = round(proteins,6)
-#write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/EGAAComposition.csv",row.names = TRUE)
-
-#********************************************************************************************************************
 
 non = ftrCOOL::ExpectedValueAA(nonpath)
 moon =ftrCOOL::ExpectedValueAA(moonpath)
@@ -187,15 +163,6 @@ proteins = rbind(moon,non)
 proteins = round(proteins,6)
 write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/GrpDDE.csv",row.names = TRUE)
 
-#********************************************************************************************************************
-
-#non = ftrCOOL::LocalPoSpKaaF(nonpath)
-#moon =ftrCOOL::LocalPoSpKaaF(moonpath)
-#non =cbind( non, class1)
-#moon = cbind(moon,class2)
-#proteins = rbind(moon,non)
-#proteins = round(proteins,6)
-#write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/LocalPoSpKaaF.csv",row.names = TRUE)
 
 #********************************************************************************************************************
 
@@ -255,7 +222,7 @@ non =cbind( non, class1)
 moon = cbind(moon,class2)
 proteins = rbind(moon,non)
 proteins = round(proteins,6)
-write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/PseKRAAC_T1.csv",row.names = TRUE)
+write.csv(proteins,"F:/Research/Moonlight/FeatureExtraction/Data/All/PseKRAAC_T2.csv",row.names = TRUE)
 
 #********************************************************************************************************************
 
